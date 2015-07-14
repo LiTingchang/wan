@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_kuaikan_card_bg"
+    android:layout_marginLeft="10dp"
+    android:padding="1px"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/topic_image"
+        android:layout_width="131dp"
+        android:layout_height="174dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:background="@drawable/ic_common_mask">
+
+        <TextView
+            android:id="@+id/topic_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxLength="10"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:shadowColor="@color/color_G0"
+            android:shadowDy="1"
+            android:shadowRadius="0.5"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/topic_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topic_title"
+            android:textColor="@color/color_G5"
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxLength="10"
+            android:layout_marginLeft="8dp"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextAppearance="@style/ActionBar.TitleText">
+
+        <TextView
+            android:id="@+id/toolbar_center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="关于快看"
+            android:textColor="@color/color_241c09"
+            android:textSize="19sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/toolbar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/toolbar_actionbar"
+        android:background="#dbdce1" />
+
+    <ImageView
+        android:id="@+id/logo_kk"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        android:layout_below="@id/toolbar_divider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_more_about_icon" />
+
+    <ImageView
+        android:id="@+id/about_logo"
+        android:layout_width="61dp"
+        android:layout_height="19dp"
+        android:layout_below="@id/logo_kk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_more_about_logo" />
+
+    <TextView
+        android:id="@+id/about_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="快看漫画"
+        android:textColor="#ffab15"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/about_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="12sp"
+        android:text="联系方式：support@kuaikanmanhua.com"
+        android:textColor="#757575" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/about_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="快看世界(北京)科技有限公司"
+        android:textColor="#757575"
+        android:textSize="14sp" />
+
+</RelativeLayout>

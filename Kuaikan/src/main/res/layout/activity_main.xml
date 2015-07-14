@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/color_K"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextAppearance="@style/ActionBar.TitleText">
+
+        <LinearLayout
+            android:id="@+id/feed_tabhost"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <!--关注tab-->
+
+                <FrameLayout
+                    android:id="@+id/feed_attention_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_home_nav_follow_btn" />
+
+                    <TextView
+                        android:id="@+id/feed_attention_notice"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/bg_rounded_attention_notice"
+                        android:visibility="invisible" />
+
+                    <View
+                        android:id="@+id/feed_attention_indicator"
+                        android:layout_width="30dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/bg_rounded_feed_tab_indicator_bg" />
+
+                </FrameLayout>
+
+                <!-- 推荐tab -->
+                <FrameLayout
+                    android:id="@+id/feed_recommend_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_home_nav_recommend_btn" />
+
+                    <View
+                        android:id="@+id/feed_recommend_indicator"
+                        android:layout_width="30dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/bg_rounded_feed_tab_indicator_bg" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/toolbar_center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/color_241c09"
+            android:textSize="19sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <TextView
+                android:id="@+id/toolbar_right_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:text="设置"
+                android:textColor="#ffab16"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/main_topic_search"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/ic_works_nav_search"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/toolbar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/toolbar_actionbar"
+        android:background="@color/color_G4" />
+
+    <RadioGroup
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:weightSum="3">
+
+        <RadioButton
+            android:id="@+id/tab_kuaikan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_tab_kuaikan"
+            android:gravity="center"
+            android:text="快看"
+            android:textColor="@drawable/color_tab_text"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/tab_topic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/ic_tab_topic"
+            android:gravity="center"
+            android:text="发现"
+            android:textColor="@drawable/color_tab_text"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/tab_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_tab_more"
+            android:gravity="center"
+            android:text="个人"
+            android:textColor="@drawable/color_tab_text"
+            android:textSize="13sp" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/tabhost_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/tabhost"
+        android:background="@color/color_G4" />
+
+    <FrameLayout
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabhost_divider"
+        android:layout_below="@id/toolbar_divider"
+        android:background="@color/white" />
+</RelativeLayout>

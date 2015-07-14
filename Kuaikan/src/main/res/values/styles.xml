@@ -1,0 +1,52 @@
+<resources>
+
+    <style name="FrameworkRoot.Theme" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="FrameworkRoot.Widget" parent="Theme.AppCompat" />
+
+    <!-- Immediate parent theme to specify base values for custom attributes -->
+    <style name="Theme" parent="FrameworkRoot.Theme">
+        <!-- Only needed for pre-L -->
+    </style>
+
+    <style name="Theme.KKMH.Base" parent="Theme">
+        <item name="colorPrimary">@color/theme_primary</item>
+        <item name="colorPrimaryDark">@color/theme_primary_dark</item>
+        <item name="actionMenuTextColor">@color/theme_primary</item>
+        <item name="actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+    </style>
+
+    <style name="Theme.KKMH" parent="Theme.KKMH.Base" />
+
+    <style name="Theme.KKMH.NoTitleBar" parent="Theme.KKMH.Base" >
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/theme_primary</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MenuTextStyle">
+        <item name="android:textColor">@color/theme_primary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SearchActivityStyle" parent="Theme.KKMH">
+        <item name="android:activityOpenEnterAnimation">@anim/fading_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fading_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fading_out</item>
+        <item name="android:activityCloseExitAnimation">@anim/fading_in</item>
+
+        <item name="android:taskOpenEnterAnimation">@anim/fading_in</item>
+        <item name="android:taskOpenExitAnimation">@anim/fading_out</item>
+        <item name="android:taskCloseEnterAnimation">@anim/fading_out</item>
+        <item name="android:taskCloseExitAnimation">@anim/fading_in</item>
+
+        <item name="android:taskToFrontEnterAnimation">@anim/fading_in</item>
+        <item name="android:taskToFrontExitAnimation">@anim/fading_out</item>
+        <item name="android:taskToBackEnterAnimation">@anim/fading_out</item>
+        <item name="android:taskToBackExitAnimation">@anim/fading_in</item>
+    </style>
+</resources>

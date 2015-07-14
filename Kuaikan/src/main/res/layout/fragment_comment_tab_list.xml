@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f9f9f9"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/comment_list_viewpager"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/comment_list_below_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/color_e2e2e2"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="visible"
+        android:orientation="horizontal">
+
+        <com.rockerhieu.emojicon.EmojiconEditText
+            android:id="@+id/comic_comment_list_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded_corner_comment_input_edittext"
+            android:hint="写评论"
+            android:paddingLeft="5dp"
+            android:maxLines="3"
+            android:minLines="1"
+            android:layout_weight="1"
+            android:textColor="#313131"
+            emojicon:emojiconSize="28sp"
+            android:textCursorDrawable="@drawable/cursor_edittext_comment"
+            android:textColorHint="@color/color_e2e2e2"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/comic_comment_list_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="发送"
+            android:textColor="@color/color_241c09"/>
+
+    </LinearLayout>
+
+</LinearLayout>

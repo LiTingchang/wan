@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_B">
+
+    <TextView
+        android:id="@+id/fragment_detail_author_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="14sp"
+        android:background="@color/color_white"
+        android:textColor="@color/color_G2"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_G4"/>
+    
+    <LinearLayout
+        android:id="@+id/fragment_detail_author_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/color_white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/fragment_detail_author_avatar"
+            android:layout_width="@dimen/topic_detail_author_avatar"
+            android:layout_height="@dimen/topic_detail_author_avatar"
+            android:scaleType="centerCrop"
+            android:background="@drawable/ic_personal_headportrait"/>
+
+        <TextView
+            android:id="@+id/fragment_detail_author_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:textColor="@color/color_G1"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:ems="20"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_listitem_next"
+            android:layout_marginRight="10dp" />
+
+
+        </LinearLayout>
+
+</LinearLayout>

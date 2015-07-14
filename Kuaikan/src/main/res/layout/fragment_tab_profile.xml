@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.ksoichiro.android.observablescrollview.TouchInterceptionFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/pager_wrapper"
+        android:layout_width="match_parent"
+        android:background="@color/color_white"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fav_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_tab_image_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_personal" />
+
+        <View
+            android:id="@+id/overlay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_tab_image_height"
+            android:background="@color/color_transparent" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_tab_image_height"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp">
+
+
+            <ImageView
+                android:id="@+id/profile_login_avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:padding="2dp"
+                android:background="@drawable/ic_personal_headportrait"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/profile_login_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:layout_below="@id/profile_login_avatar"
+                android:layout_centerHorizontal="true"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_tab_image_height"
+                android:background="@android:color/transparent" />
+
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/fav_typehost"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_tab_tab_height"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton
+                android:id="@+id/fav_topic"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_me_tab_left"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="关注的专题"
+                android:textColor="@drawable/color_fav_pagertabstrip_text"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/fav_comic"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_me_tab_right"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="收藏单篇"
+                android:textColor="@drawable/color_fav_pagertabstrip_text"
+                android:textSize="16sp" />
+        </RadioGroup>
+    </FrameLayout>
+</com.github.ksoichiro.android.observablescrollview.TouchInterceptionFrameLayout>

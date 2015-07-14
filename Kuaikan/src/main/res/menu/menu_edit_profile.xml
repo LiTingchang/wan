@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kkapp="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/edit_profile_finish"
+        android:title="完成"
+        kkapp:showAsAction="always" />
+</menu>

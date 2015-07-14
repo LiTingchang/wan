@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/topic_detail_list_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/comic_cover"
+            android:layout_width="108dp"
+            android:layout_height="58.725dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/comic_title_in_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/comic_cover"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_G1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/comic_time_in_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/comic_cover"
+            android:textColor="@color/color_G2"
+            android:textSize="10sp"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/comic_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="4dp"
+            android:textSize="10sp"
+            android:text="33333"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_G2"
+            android:drawableLeft="@drawable/ic_home_praise_normal"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:background="@color/divider_gray" />
+
+</LinearLayout>

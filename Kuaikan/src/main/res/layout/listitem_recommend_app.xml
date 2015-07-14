@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="69dp">
+
+    <ImageView
+        android:id="@+id/view_recommend_app_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/view_recommend_app_image"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/view_recommend_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_241c09"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxEms="7"/>
+
+        <TextView
+            android:id="@+id/view_recommend_app_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:maxEms="15"
+            android:ellipsize="end"
+            android:textColor="@color/color_9a9a9a"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/view_recommend_app_download"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="14sp"
+        android:textColor="@color/recommend_app_download_btn_text_color"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:background="@drawable/bg_recommend_app_btn_bg"
+        android:text="下载"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#aeaeae"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

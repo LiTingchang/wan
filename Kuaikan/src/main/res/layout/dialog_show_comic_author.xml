@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_rounded_corner_show_comic_author_dialog_top"
+        android:paddingBottom="15dp"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/dialog_show_comic_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="2dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_personal_headportrait"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/color_ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#e6ffffff"
+        android:textSize="12sp" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_rounded_corner_show_comic_author_dialog_bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/dialog_show_comic_weibo_ly"
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+            <TextView
+                android:id="@+id/dialog_show_comic_weibo_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_author_weibo"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/dialog_show_comic_weibo_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_da7973"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/dialog_show_comic_weibo_ic"
+                android:text="微博"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_cccccc"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="点击复制"
+                android:textSize="11sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dialog_show_comic_weixin_ly"
+            android:layout_width="match_parent"
+            android:layout_height="43dp">
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_f0f0f0"/>
+            <TextView
+                android:id="@+id/dialog_show_comic_weixin_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/ic_author_wechat"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/dialog_show_comic_weixin_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/color_5dac82"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/dialog_show_comic_weixin_ic"
+                android:text="微信"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_cccccc"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="点击复制"
+                android:textSize="11sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dialog_show_comic_link_ly"
+            android:layout_width="match_parent"
+            android:layout_height="43dp">
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_f0f0f0"/>
+
+            <TextView
+                android:id="@+id/dialog_show_comic_link_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/ic_author_link"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/dialog_show_comic_link_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/color_67a6be"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/dialog_show_comic_link_ic"
+                android:text="网站地址"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_cccccc"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="访问网站"
+                android:textSize="11sp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/dialog_show_comic_download_ly"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_f0f0f0"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+                <TextView
+                    android:id="@+id/dialog_show_comic_download_ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dialog_show_comic_download"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/dialog_show_comic_download_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_818181"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/dialog_show_comic_download_ic"
+                    android:text="下载应用"
+                    android:textSize="11sp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

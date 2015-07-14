@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <ImageView
+            android:id="@+id/guide_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/guide_text_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_ffffff"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:layout_marginBottom="13dp"/>
+
+        <TextView
+            android:id="@+id/guide_text_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/color_80ffffff"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/guide_text_top"/>
+
+        <TextView
+            android:id="@+id/goto_main"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"
+            android:layout_centerInParent="true"
+            android:text="立即体验"
+            android:textColor="@color/color_ffffff"
+            android:background="@drawable/bg_rounded_corner_goto_main" />
+
+    </RelativeLayout>
+
+</LinearLayout>

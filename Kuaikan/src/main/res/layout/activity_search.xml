@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    tools:context="com.kuaikan.comic.ui.SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/search_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_rounded_corner_search_edittext"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_search_searchbar_search"
+                android:layout_marginRight="7dp"/>
+
+            <EditText
+                android:id="@+id/search_input"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:hint="搜索作品名、作者名"
+                android:textSize="14sp"
+                android:textColorHint="@color/color_aeaeae"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:background="@null" />
+            <TextView
+                android:id="@+id/ic_search_searchbar_del"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="right|center_vertical"
+                android:visibility="gone"
+                android:background="@drawable/ic_search_searchbar_delete"
+                android:layout_marginRight="7dp"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/search_bar_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="取消"
+            android:textSize="17sp"
+            android:textColor="@color/color_ff9f14"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/search_action_bar_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/search_title_bar"
+        android:background="@color/color_d0d0d0"/>
+
+    <android.support.v7.widget.RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_below="@id/search_action_bar_line"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" />
+
+</RelativeLayout>

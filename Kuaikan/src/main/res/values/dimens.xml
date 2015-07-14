@@ -1,0 +1,36 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="view_comic_title_corner">2dp</dimen>
+
+    <dimen name="view_comment_input_corner">4dp</dimen>
+    <dimen name="view_comment_input_padding">8dp</dimen>
+
+    <dimen name="view_button_corner">4dp</dimen>
+    <!-- Action Bar auto-hide-on-scroll behavior parameters -->
+    <dimen name="action_bar_auto_hide_min_y">152dp</dimen>
+    <dimen name="action_bar_auto_hide_sensivity">48dp</dimen>
+    <dimen name="view_topic_comic_list_width">131dp</dimen>
+    <dimen name="view_topic_comic_list_higth">82dp</dimen>
+    <dimen name="main_tab_profile_avatar_width">76dp</dimen>
+    <dimen name="view_search_item_height">44dp</dimen>
+    <dimen name="topic_tab_viewpager_height">180dp</dimen>
+    <dimen name="dialog_show_comic_author_avatar">80dp</dimen>
+    <dimen name="comic_detail_author_avatar">45dp</dimen>
+    <dimen name="listview_bottom_padding">0dp</dimen>
+    <dimen name="profile_tab_image_height">150dp</dimen>
+    <dimen name="detail_cover_image_height">250dp</dimen>
+    <dimen name="profile_tab_tab_height">45dp</dimen>
+    <dimen name="topic_detail_author_avatar">30dp</dimen>
+    <dimen name="comic_author_avatar">30dp</dimen>
+    
+    <dimen name="find_tab_recycleview_topic_height">184dp</dimen>
+    <dimen name="find_tab_recycleview_comic_height">154dp</dimen>
+    <dimen name="find_tab_recycleview_topic_recyclerview_height">183dp</dimen>
+    <dimen name="find_tab_recycleview_comic_recyclerview_height">153dp</dimen>
+    <dimen name="fragment_more_recyclerview_singleline_height">75dp</dimen>
+    <dimen name="topic_detail_title_marigin_left">10dp</dimen>
+    <dimen name="touch_slop">32dp</dimen>
+
+</resources>

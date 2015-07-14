@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.kuaikan.comic.ui.TopicDetailActivity">
+
+    <FrameLayout
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <FrameLayout
+            android:id="@+id/activity_topic_back_layout"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true">
+
+            <View
+                android:id="@+id/activity_topic_back_bg"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@drawable/bg_rounded_corner_topic_back_bg"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/activity_topic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_album_nav_back"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/topic_detail_header_collect_layout"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/topic_detail_header_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_album_nav_follow_btn"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

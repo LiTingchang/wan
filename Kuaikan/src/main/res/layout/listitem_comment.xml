@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/comment_user_icon"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/comment_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/comment_user_icon"
+            android:ellipsize="end"
+            android:textColor="#7a7c7d"
+            android:shadowColor="@color/color_G1"
+            android:shadowDy="1"
+            android:shadowRadius="0.5"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/comment_user_name"
+            android:layout_toRightOf="@id/comment_user_icon"
+            android:textColor="@color/color_G2"
+            android:textSize="14sp" />
+
+
+        <com.rockerhieu.emojicon.EmojiconTextView
+            android:id="@+id/comment_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/comment_time"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#7a7c7d"
+            android:shadowColor="@color/color_G3"
+            android:shadowDy="1"
+            android:shadowRadius="0.5"
+            android:layout_toRightOf="@id/comment_user_icon"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/comment_like_count"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="left|center_vertical"
+            android:paddingTop="10dp"
+            android:textColor="@color/color_G2"
+            android:singleLine="true"
+            android:textSize="11sp"/>
+
+        <ImageView
+            android:id="@+id/comment_like_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/comment_like_count"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:padding="7dp"
+            android:background="@null"
+            android:src="@drawable/ic_details_toolbar_praise_normal"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e1e1e1" />
+</LinearLayout>

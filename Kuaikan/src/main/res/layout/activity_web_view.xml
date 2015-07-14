@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical"
+    tools:context="com.kuaikan.comic.ui.WebViewActivity">
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextAppearance="@style/ActionBar.TitleText">
+
+        <TextView
+            android:id="@+id/toolbar_center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="网页"
+            android:textColor="@color/color_241c09"
+            android:textSize="19sp"  />
+
+        <TextView
+            android:id="@+id/toolbar_webview_share_btn"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_webview_share_btn"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <!--分割线-->
+    <View
+        android:id="@+id/toolbar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d0d0d0" />
+    <ProgressBar
+        android:id="@+id/activity_webview_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip" />
+
+    <WebView
+        android:id="@+id/activity_webview"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"/>
+
+
+</LinearLayout>

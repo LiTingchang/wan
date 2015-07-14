@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kuaikan.comic.util.FixedAspectRatioFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:farf="http://schemas.android.com/apk/res-auto"
+    android:layout_height="0dp"
+    farf:aspectRatio="0.5625"
+    android:layout_width="match_parent">
+
+    <com.kuaikan.comic.ui.view.BannerViewPager
+        android:id="@+id/kuaikan_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:flipInterval="30"/>
+
+    <com.kuaikan.comic.ui.view.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:padding="10dip"
+        android:layout_gravity="bottom"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_height="wrap_content" />
+
+</com.kuaikan.comic.util.FixedAspectRatioFrameLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">快看漫画</string>
+    <string name="title_activity_comic_detail">漫画内容</string>
+    <string name="title_activity_topic_list">专题列表</string>
+    <string name="title_activity_about">关于快看</string>
+    <string name="title_activity_login">微博登录</string>
+    <string name="title_activity_suggestion_app">意见反馈</string>
+    <string name="action_fav">收藏</string>
+    <string name="title_activity_more">MoreActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_more">更多</string>
+    <string name="tab_topic_hot_item">热门漫画</string>
+    <string name="tab_topic_recent_item">最近更新</string>
+    <string name="tab_topic_recomend_item">编辑推荐</string>
+    <string name="tab_topic_more_item">快看更多</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_verify">VerifyActivity</string>
+    <string name="title_activity_setting_pwd">SettingPwdActivity</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="title_activity_forget_fwd">ForgetFwdActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+
+    <!-- 搜索 -->
+    <string name="activity_search_category_title">按类别搜索</string>
+    <string name="title_activity_comment_list">CommentListActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
+    <string name="title_activity_recommend_app">RecommendAppActivity</string>
+    <string name="title_activity_author">AuthorActivity</string>
+    <string name="title_activity_rating_dialog">RatingDialogActivity</string>
+
+    <string name="feed_attention_empty_content">没登录，超多精彩内容看不鸟</string>
+    <string name="feed_attention_no_attention">你还没有关注哦~</string>
+
+    <!-- 错误码 -->
+    <string name="error_network">网络连接异常</string>
+    <string name="error_code_400">网络错误，请求失败</string>
+    <string name="error_code_401">登录信息过期,请重新登录!</string>
+    <string name="error_code_409">用户已经注册</string>
+    <string name="error_code_600000">好像有点问题哦！待会再试试吧～+_+</string>
+    <string name="error_code_600001">你的手机号还没注册啦！ˊ_&gt;ˋ</string>
+    <string name="error_code_600002">填错了吧？这是无效的手机号！(´･_･`)</string>
+    <string name="error_code_600003">该手机号码的账号已经存在了哟～(´･Д･)」</string>
+    <string name="error_code_600004">账号或者密码不对orz</string>
+    <string name="error_code_600005">验证码无效或者过期咯！(o_o)</string>
+    <string name="error_code_600006">头像上传有误！(☆_☆)</string>
+    <string name="error_code_600007">这个昵称已经有人用过咯～&gt;_&lt;</string>
+    <string name="error_code_600008">昵称无效～</string>
+    <string name="error_code_600009">关注失败</string>
+    <string name="error_code_600010">收藏失败</string>
+    <string name="error_code_600011">评论失败</string>
+    <string name="error_code_600012">取消关注失败</string>
+    <string name="error_code_600013">取消搜藏失败</string>
+    <string name="error_code_600014">哎呀~你发送的频率太高了~</string>
+
+    <!--webview-->
+    <string name="webview_share_subtitle">快看！一分钟一个超赞故事！</string>
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextAppearance="@style/ActionBar.TitleText">
+
+        <TextView
+            android:id="@+id/toolbar_center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="意见反馈"
+            android:textColor="@color/color_241c09"
+            android:textSize="19sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/toolbar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/toolbar_actionbar"
+        android:background="#dbdce1" />
+
+    <EditText
+        android:id="@+id/suggestion_content_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:gravity="top|left"
+        android:hint="请您在这里填写您对快看漫画的意见，我们将不断努力改进，感谢支持"
+        android:maxLines="7"
+        android:minLines="4"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:lineSpacingExtra="5dp"
+        android:textColorHint="#acacac"
+        android:textColor="#313131"
+        android:textCursorDrawable="@drawable/cursor_edittext_comment"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/suggestion_contact_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:gravity="top|left"
+        android:hint="留下电话/QQ/邮箱(可选)，以便我们与您联系"
+        android:singleLine="true"
+        android:textColor="#313131"
+        android:textColorHighlight="#acacac"
+        android:textCursorDrawable="@drawable/cursor_edittext_comment"
+        android:textSize="14sp" />
+</LinearLayout>

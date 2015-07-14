@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kuaikan.comic.ui.CommentListActivity">
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextAppearance="@style/ActionBar.TitleText">
+
+        <RadioGroup
+            android:id="@+id/comment_list_tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton
+                android:id="@+id/comment_list_newest_tab"
+                android:layout_width="105dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_comment_tab_left_radio"
+                android:button="@null"
+                android:gravity="center"
+                android:text="最新评论"
+                android:textColor="@drawable/color_comment_tab_text"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/comment_list_hottest_tab"
+                android:layout_width="105dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_comment_tab_right_radio"
+                android:button="@null"
+                android:gravity="center"
+                android:text="最热评论"
+                android:textColor="@drawable/color_comment_tab_text"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:id="@+id/toolbar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dbdce1" />
+
+    <FrameLayout
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
