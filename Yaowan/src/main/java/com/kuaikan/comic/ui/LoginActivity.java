@@ -17,7 +17,6 @@ import android.widget.Toast;
 import com.kuaikan.comic.KKMHApp;
 import com.kuaikan.comic.R;
 import com.kuaikan.comic.rest.model.SignUserInfo;
-import com.kuaikan.comic.service.LocalPushService;
 import com.kuaikan.comic.service.PollingService;
 import com.kuaikan.comic.util.PreferencesStorageUtil;
 import com.kuaikan.comic.util.RetrofitErrorUtil;
@@ -240,7 +239,6 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                         finish();
 //                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
 //                        LoginActivity.this.startActivity(intent);
-                        ServiceUtils.startLocalPushService(LoginActivity.this, LocalPushService.POLLING_CALLBACK_TIME_INTERVAL, LocalPushService.class, LocalPushService.ACTION);
                         ServiceUtils.startLocalPushService(LoginActivity.this, PreferencesStorageUtil.getLocalPushPollingInterval(LoginActivity.this), PollingService.class, PollingService.ACTION);
                     }
 

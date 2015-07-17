@@ -94,24 +94,6 @@ android {
 //        CrossMo {}
 //        WoStore {}
 //        OfficialWebsite{}
-//        Fensitong {}
-//        Huapipi{}
-//        Meila {}
-//        Meika {}
-//        Jinli {}
-//        Lianlian {}
-//        Liwushuo {}
-//        Woyaodangxueba {}
-//        kuaikan01{}
-//        kuaikan02{}
-//        kuaikan03{}
-//        kuaikan04{}
-//        kuaikan05{}
-//        kuaikan06{}
-//        kuaikan07{}
-//        kuaikan08{}
-//        kuaikan09{}
-//        kuaikan10{}
     }
 
     applicationVariants.all { variant ->

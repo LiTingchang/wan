@@ -20,7 +20,6 @@ import android.widget.TextView;
 import com.kuaikan.comic.KKMHApp;
 import com.kuaikan.comic.R;
 import com.kuaikan.comic.rest.model.API.VersionResponse;
-import com.kuaikan.comic.service.LocalPushService;
 import com.kuaikan.comic.service.PollingService;
 import com.kuaikan.comic.ui.fragment.MainTabKuaikanFragment;
 import com.kuaikan.comic.ui.fragment.MainTabProfile2Fragment;
@@ -127,7 +126,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         ((RadioButton) findViewById(R.id.tab_kuaikan)).setChecked(true);
         checkUpdate();
         if(UserUtil.isUserLogin(MainActivity.this)) {
-            ServiceUtils.startLocalPushService(this, LocalPushService.POLLING_CALLBACK_TIME_INTERVAL, LocalPushService.class, LocalPushService.ACTION);
             ServiceUtils.startLocalPushService(this, PreferencesStorageUtil.getLocalPushPollingInterval(MainActivity.this), PollingService.class, PollingService.ACTION);
         }
 //        ServiceUtils.stopLocalPushService(this, LocalPushService.class, LocalPushService.ACTION);

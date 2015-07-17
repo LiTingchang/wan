@@ -1,1 +1,1 @@
-include ':Kuaikan',':MyDaoGenerator'
+include ':Yaowan',':MyDaoGenerator'

@@ -26,7 +26,6 @@ import com.kuaikan.comic.rest.PicassoProvider;
 import com.kuaikan.comic.rest.model.API.RecommendAppResponse;
 import com.kuaikan.comic.rest.model.API.VersionResponse;
 import com.kuaikan.comic.rest.model.App;
-import com.kuaikan.comic.service.LocalPushService;
 import com.kuaikan.comic.service.PollingService;
 import com.kuaikan.comic.ui.AboutActivity;
 import com.kuaikan.comic.ui.MainActivity;
@@ -131,7 +130,6 @@ public class MoreFragment extends Fragment {
 //                refreshUserView();
                 Intent intent = new Intent(getActivity(), MainActivity.class);
                 getActivity().startActivity(intent);
-                ServiceUtils.stopLocalPushService(getActivity(), LocalPushService.class, LocalPushService.ACTION);
                 ServiceUtils.stopLocalPushService(getActivity(), PollingService.class, PollingService.ACTION);
             }
         }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
