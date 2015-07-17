@@ -268,12 +268,6 @@
             android:theme="@style/Theme.KKMH">
         </activity>
         <activity
-            android:name=".ui.RecommendAppActivity"
-            android:label="@string/title_activity_recommend_app"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.KKMH">
-        </activity>
-        <activity
             android:name=".ui.AuthorActivity"
             android:label="@string/title_activity_author"
             android:screenOrientation="portrait"
@@ -285,15 +279,6 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent">
         </activity>
-
-        <service
-            android:enabled="true"
-            android:name=".service.LocalPushService"
-            android:process="com.kuaikan.comic.servant">
-            <intent-filter>
-                <action android:name="com.kuaikan.comic.LocalPushService" />
-            </intent-filter>
-        </service>
 
         <service
             android:enabled="true"
