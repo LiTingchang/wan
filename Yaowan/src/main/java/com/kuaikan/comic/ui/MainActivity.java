@@ -76,13 +76,13 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
             fragmentTransaction.commit();
             currentTabID = checkedId;
             switch (currentTabID) {
-                case R.id.tab_kuaikan:
+                case R.id.tab_yaowan:
                     showActionbarLogo();
                     break;
-                case R.id.tab_topic:
+                case R.id.tab_category:
                     showTopicTab();
                     break;
-                case R.id.tab_profile:
+                case R.id.tab_browse:
                     showProfileTab();
                     break;
             }
@@ -116,14 +116,14 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         profileTabFragment = MainTabProfile2Fragment.newInstance();
         tabTopicFragment = MainTabTopicFragment.newInstance();
 //        moreTabFragment = MoreFragment.newInstance();
-        fragmentMap.put(R.id.tab_kuaikan, mainTabKuaikanFragment);
-        fragmentMap.put(R.id.tab_topic, tabTopicFragment);
-        fragmentMap.put(R.id.tab_profile, profileTabFragment);
+        fragmentMap.put(R.id.tab_yaowan, mainTabKuaikanFragment);
+        fragmentMap.put(R.id.tab_category, tabTopicFragment);
+        fragmentMap.put(R.id.tab_browse, profileTabFragment);
 //        fragmentMap.put(R.id.tab_more, moreTabFragment);
 
-        currentTabID = R.id.tab_kuaikan;
+        currentTabID = R.id.tab_yaowan;
         tabHost.setOnCheckedChangeListener(onCheckedChangeListener);
-        ((RadioButton) findViewById(R.id.tab_kuaikan)).setChecked(true);
+        ((RadioButton) findViewById(R.id.tab_yaowan)).setChecked(true);
         checkUpdate();
         if(UserUtil.isUserLogin(MainActivity.this)) {
             ServiceUtils.startLocalPushService(this, PreferencesStorageUtil.getLocalPushPollingInterval(MainActivity.this), PollingService.class, PollingService.ACTION);

@@ -147,19 +147,19 @@
         android:weightSum="4">
 
         <RadioButton
-            android:id="@+id/tab_kuaikan"
+            android:id="@+id/tab_yaowan"
             style="@style/MainTabButton"
             android:drawableTop="@drawable/ic_tab_yaowan"
             android:text="要玩" />
 
         <RadioButton
-            android:id="@+id/tab_topic"
+            android:id="@+id/tab_category"
             style="@style/MainTabButton"
             android:drawableTop="@drawable/ic_tab_category"
             android:text="分类" />
 
         <RadioButton
-            android:id="@+id/tab_profile"
+            android:id="@+id/tab_browse"
             style="@style/MainTabButton"
             android:drawableTop="@drawable/ic_tab_browse"
             android:text="看看" />
