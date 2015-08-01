@@ -144,47 +144,31 @@
         android:orientation="horizontal"
         android:paddingBottom="4dp"
         android:paddingTop="4dp"
-        android:weightSum="3">
+        android:weightSum="4">
 
         <RadioButton
             android:id="@+id/tab_kuaikan"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@null"
-            android:button="@null"
-            android:drawableTop="@drawable/ic_tab_kuaikan"
-            android:gravity="center"
-            android:text="快看"
-            android:textColor="@drawable/color_tab_text"
-            android:textSize="13sp" />
+            style="@style/MainTabButton"
+            android:drawableTop="@drawable/ic_tab_yaowan"
+            android:text="要玩" />
 
         <RadioButton
             android:id="@+id/tab_topic"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@null"
-            android:button="@null"
-            android:checked="false"
-            android:drawableTop="@drawable/ic_tab_topic"
-            android:gravity="center"
-            android:text="发现"
-            android:textColor="@drawable/color_tab_text"
-            android:textSize="13sp" />
+            style="@style/MainTabButton"
+            android:drawableTop="@drawable/ic_tab_category"
+            android:text="分类" />
 
         <RadioButton
             android:id="@+id/tab_profile"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@null"
-            android:button="@null"
-            android:drawableTop="@drawable/ic_tab_more"
-            android:gravity="center"
-            android:text="个人"
-            android:textColor="@drawable/color_tab_text"
-            android:textSize="13sp" />
+            style="@style/MainTabButton"
+            android:drawableTop="@drawable/ic_tab_browse"
+            android:text="看看" />
+
+        <RadioButton
+            android:id="@+id/tab_personal"
+            style="@style/MainTabButton"
+            android:drawableTop="@drawable/ic_tab_personal"
+            android:text="我的" />
 
     </RadioGroup>
 

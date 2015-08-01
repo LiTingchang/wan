@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- tab text -->
+    <color name="tab_text_normal">#929292</color>
+    <color name="tab_text_checked">#13B5B1</color>
+
+</resources>
